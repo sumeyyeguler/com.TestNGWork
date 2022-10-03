@@ -1,0 +1,27 @@
+yeni bir proje oluşturduğumuzda;
+
+    1)pom.xml e eklemeler yapılır.
+
+    2)PAGE OBJECT MODEL oluşturulur.
+    Page Object Model temelde 3 package icerir, SRC>TEST>JAVA>pages/tests/utilities oluşturulur.
+    ➢ Tests : Sadece testleri execute etmek icin gerekli
+    adimlari yazacagimiz class’lar icerir. Hicbir data girisi
+    yapmayacagiz
+    test classımızda kullanacağımız page classından obje üretmeliyiz
+    ➢ Pages : Test yapacagimiz sayfalardaki Web
+    Elementlerini locate etmek ve temel methodlari
+    olusturmak icin kullanilir.
+    (pages oluşturduğumuzda ilk yapmamız gerekn şey public constructor oluşturmaktır.
+    ve constructor içinde kullanacağımız driverı tanıtmamız gerekecektir.)
+    ORN:  public constructor(){
+                 PageFactory.initElements(Driver.getDriver(),this);}
+
+    ORN LOCATE:   @FindBy(id="twotabsearchtextbox")
+                    public WebElement  aramaKutusu;
+
+
+
+    ➢ Utilities : Driver,TestBase ve ConfigurationReader
+    class’larini icerir
+
+    3)configration.properties file ı oluşturulur. Bu file'ın uzantısı properties olmak zorundadır.
