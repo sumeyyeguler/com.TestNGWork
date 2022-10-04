@@ -1,4 +1,4 @@
-package tests.hotelMyCamp;
+package tests.hotelMyCampSmokeTests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

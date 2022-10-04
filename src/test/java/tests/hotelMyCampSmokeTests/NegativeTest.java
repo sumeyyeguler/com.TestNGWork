@@ -1,4 +1,4 @@
-package tests.hotelMyCamp;
+package tests.hotelMyCampSmokeTests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ public class NegativeTest {
     HotelMyCamp hmc = new HotelMyCamp();
 
     @Test
-    public void NegativeTest() {
+    public void YanlisUsername() {
         // 1 ) Bir Class olustur : NegativeTest
         // 2) Bir test method olustur NegativeLoginTest()
         // https://www.hotelmycamp.com/ adresine git
@@ -24,6 +24,28 @@ public class NegativeTest {
         hmc.password.sendKeys(ConfigReader.getProperty("hmcValidPassword"));
         hmc.login2.click();
         //Degerleri girildiginde sayfaya girilemedigini test et
+        Assert.assertTrue(hmc.login2.isDisplayed());
+        Driver.closeDriver();
+    }
+
+    @Test
+    public void yanlisPassword() {
+        Driver.getDriver().get(ConfigReader.getProperty("hmcURL"));
+        hmc.login1.click();
+        hmc.username.sendKeys(ConfigReader.getProperty("hmcValidUsername"));
+        hmc.password.sendKeys(ConfigReader.getProperty("hmcWrongPassword"));
+        hmc.login2.click();
+        Assert.assertTrue(hmc.login2.isDisplayed());
+        Driver.closeDriver();
+    }
+
+    @Test
+    public void yanlisUsernamePassword() {
+        Driver.getDriver().get(ConfigReader.getProperty("hmcURL"));
+        hmc.login1.click();
+        hmc.username.sendKeys(ConfigReader.getProperty("hmcWrongUsername"));
+        hmc.password.sendKeys(ConfigReader.getProperty("hmcWrongPassword"));
+        hmc.login2.click();
         Assert.assertTrue(hmc.login2.isDisplayed());
         Driver.closeDriver();
     }
