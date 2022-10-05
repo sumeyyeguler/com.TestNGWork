@@ -1,16 +1,12 @@
-package tests.hotelMyCampSmokeTests;
+package tests.hotelMyCamp;
 
 import com.github.javafaker.Faker;
-import org.checkerframework.checker.units.qual.K;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.FacebookPage;
 import pages.HotelMyCamp;
 import utilities.ConfigReader;
 import utilities.Driver;

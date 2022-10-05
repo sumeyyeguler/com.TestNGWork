@@ -67,5 +67,30 @@ public class HotelMyCamp {
     @FindBy(xpath = "//button[@class='btn btn-primary']")
     public WebElement uyariPaneliOK;
 
+    @FindBy(xpath = "//*[text()='Add Hotelroom ']")
+    public WebElement addHotelRoomButonu;
 
+    @FindBy(xpath = "//*[@id='IDHotel']")
+    public WebElement createHotelRoomIdHotel;
+
+    @FindBy(xpath = "//*[@id='Code']")
+    public WebElement createHotelRoomCode;
+
+    @FindBy(xpath = "//select[@id='IDGroupRoomType']")
+    public WebElement createHotelRoomType;
+
+    @FindBy(xpath = "//*[@id='uniform-IsAvailable']")
+    public WebElement createHotelApproveCheckBox;
+
+    @FindBy(xpath = "//*[@id='MaxAdultCount']")
+    public WebElement createHotelMaxAdultCount;
+
+    @FindBy(xpath = "//*[@id='btnSubmit']")
+    public WebElement createHotelSave;
+
+    @FindBy(xpath = "//div[@class='bootbox-body']")
+    public WebElement createHotelAlert;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement createHotelAlertOK;
 }
