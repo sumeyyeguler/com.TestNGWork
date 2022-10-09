@@ -26,5 +26,7 @@ public class PositivetiveTest {
         hmc.login2.click();
         Assert.assertTrue(hmc.managerGorunurlugu.isDisplayed());
         Driver.closeDriver();
+
+
     }
 }
