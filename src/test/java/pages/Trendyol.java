@@ -28,19 +28,28 @@ public class Trendyol {
     @FindBy(xpath = "//*[text()='Ev & Mobilya']")
     public WebElement evVeMobilya;
 
-    @FindBy(xpath = "//*[text()='Avize']")
+    @FindBy (linkText = "Avize")
     public WebElement avize;
 
     @FindBy(xpath = "//img[@alt='Aydınlatmada İndirim Zamanı']")
     public WebElement aydinlatmadaIndirimZamani;
 
-    @FindBy(xpath = "(//img[@class='p-card-img'])[1]")
+    @FindBy(xpath = "(//span[@class='prdct-desc-cntnr-name hasRatings'])[1]")
     public WebElement avizeIlkUrun;
 
-    @FindBy(xpath = "(//img[@class='p-card-img'])[2]")
+    @FindBy(xpath = "(//span[@class='prdct-desc-cntnr-name hasRatings'])[2]")
     public WebElement avizeIkinciUrun;
 
 
-    @FindBy(xpath = "//*[@class='add-to-basket']")
+    @FindBy(xpath = "//div[@class='add-to-basket-button-text']")
     public WebElement sepeteEkle;
+
+    @FindBy(xpath = "(//*[text()='Sepetim'])[1]")
+    public WebElement sepetim;
+
+    @FindBy (className = "vQI670rJ")
+    public WebElement aramaKutusu;
+
+    @FindBy (xpath = "//div[@class='dscrptn']")
+    public WebElement makasAramaSonucYazisi;
 }

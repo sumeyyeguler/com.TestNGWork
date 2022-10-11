@@ -32,7 +32,7 @@ public class EmoojisTest {
         // apply butonuna tıklayın
         Faker faker = new Faker();
         Actions actions=new Actions(Driver.getDriver());
-        actions.click(emoji.textKutusu)
+       actions.click(emoji.textKutusu)
                 .sendKeys(faker.lorem().word())
                 .sendKeys(Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word()
                 ,Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word()
