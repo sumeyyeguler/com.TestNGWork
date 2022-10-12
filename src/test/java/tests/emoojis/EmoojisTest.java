@@ -21,7 +21,7 @@ public class EmoojisTest {
         // ikinci emojiye tıklayın (hayvan emojisini seçin)
         Driver.getDriver().switchTo().frame(emoji.iframe);
         emoji.hayvanEmojiSecim.click();
-        // tüm hayvan emojilerine tıklayın
+        // tüm hayvan emojilerine tıklayınn
         List<WebElement> emojiList = emoji.tumHayvanEmojileriList;
         for (WebElement each : emojiList
         ) {
