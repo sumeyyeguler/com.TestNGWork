@@ -31,13 +31,20 @@ public class EmoojisTest {
         // formu doldurun (dilediğinizi yazabilirsiniz)
         // apply butonuna tıklayın
         Faker faker = new Faker();
-        Actions actions=new Actions(Driver.getDriver());
-       actions.click(emoji.textKutusu)
+        Actions actions = new Actions(Driver.getDriver());
+        actions.click(emoji.textKutusu)
                 .sendKeys(faker.lorem().word())
-                .sendKeys(Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word()
-                ,Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word()
-                ,Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,faker.lorem().word(),Keys.TAB,Keys.ENTER).perform();
+                .sendKeys(Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word()
+                        , Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word()
+                        , Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word(), Keys.TAB, faker.lorem().word(), Keys.TAB, Keys.ENTER).perform();
 
+
+        //driver.findElements(By.xpath("//div[3]//img")).stream().limit(64).forEach(t->t.click());
+        //locate'ten eminsek ve nosuchExeption uyarısı alıyorsak eğer iframe olabilir
+        //absolute locate -->//div[3]//img
+        ////div[@id='nature']/div/img
+        //parenttan childa giderken slash / kullanılır
+        
 
     }
 }
