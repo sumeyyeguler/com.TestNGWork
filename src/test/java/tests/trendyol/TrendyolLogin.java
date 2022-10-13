@@ -4,13 +4,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.Trendyol;
+import pages.TrendyolPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class TrendyolLogin {
 
-    Trendyol trendyol = new Trendyol();
+    TrendyolPage trendyol = new TrendyolPage();
 
     @Test(priority = 1)
     public void positiveLogin() {

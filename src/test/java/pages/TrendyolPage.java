@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Trendyol {
-    public Trendyol() {
+public class TrendyolPage {
+    public TrendyolPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

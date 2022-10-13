@@ -5,14 +5,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import pages.Emoojis;
+import pages.EmoojisPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.util.List;
 
 public class EmoojisTest {
-    Emoojis emoji = new Emoojis();
+    EmoojisPage emoji = new EmoojisPage();
 
     @Test
     public void test01() {
@@ -44,7 +44,8 @@ public class EmoojisTest {
         //absolute locate -->//div[3]//img
         ////div[@id='nature']/div/img
         //parenttan childa giderken slash / kullanılır
-        
+        //çift slash aralardakikeleri atlıyor
+
 
     }
 }

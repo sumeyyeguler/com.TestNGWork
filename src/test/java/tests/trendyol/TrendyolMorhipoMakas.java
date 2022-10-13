@@ -1,27 +1,25 @@
-package tests.trendyol1;
+package tests.trendyol;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
-import pages.Google;
-import pages.Morhipo;
-import pages.Trendyol;
+import pages.GooglePage;
+import pages.MorhipoPage;
+import pages.TrendyolPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-public class Trendyol2 {
+public class TrendyolMorhipoMakas {
 
-    Google google = new Google();
-    Trendyol trendyol = new Trendyol();
+    GooglePage google = new GooglePage();
+    TrendyolPage trendyol = new TrendyolPage();
 
-    Morhipo morhipo=new Morhipo();
+    MorhipoPage morhipo=new MorhipoPage();
 
     @Test
     public void test01() {

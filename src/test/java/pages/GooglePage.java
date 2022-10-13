@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Google {
-    public Google() {
+public class GooglePage {
+    public GooglePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

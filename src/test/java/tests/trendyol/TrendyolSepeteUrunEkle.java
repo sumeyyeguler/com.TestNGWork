@@ -1,12 +1,8 @@
 package tests.trendyol;
 
-import org.checkerframework.checker.units.qual.A;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import pages.Trendyol;
+import pages.TrendyolPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -17,7 +13,7 @@ import java.util.Set;
 
 public class TrendyolSepeteUrunEkle {
 
-    Trendyol trendyol = new Trendyol();
+    TrendyolPage trendyol = new TrendyolPage();
 
     @Test
     public void evMobilyaMenu() {
