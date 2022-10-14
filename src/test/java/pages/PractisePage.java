@@ -15,12 +15,14 @@ public class PractisePage {
     @FindBy (xpath = "//span[@id='button1']")
     public WebElement WYAclickButton1;
 
+    //ToDoList
     @FindBy(xpath = "//input[@type='text']")
     public WebElement addNewToDo;
 
     @FindBy(xpath = "//i[@class='fa fa-trash']")
     public List<WebElement> todoListesi;
 
+    //webdriveruniversity.com
     @FindBy (xpath = "//button[text()='Hover Over Me First!']")
     public WebElement hoverOverFirst;
 
