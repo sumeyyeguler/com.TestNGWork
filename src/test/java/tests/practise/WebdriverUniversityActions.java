@@ -5,12 +5,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import pages.PractisePage;
+import pages.WebUniversityPages;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class HomeWork1 {
+public class WebdriverUniversityActions {
 
-    PractisePage practise = new PractisePage();
+    WebUniversityPages webUniversityPages=new WebUniversityPages();
 
     @Test
     public void test() {
@@ -18,9 +19,9 @@ public class HomeWork1 {
         Driver.getDriver().get(ConfigReader.getProperty("webDriverUniversityActions"));
         //Hover over Me First" kutusunun ustune gelin
         Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(practise.hoverOverFirst).perform();
+        actions.moveToElement(webUniversityPages.hoverOverFirst).perform();
         //Link 1" e tiklayin
-        WebElement ddm=practise.hoverOverFirstDropDown;
+        WebElement ddm=webUniversityPages.hoverOverFirstDropDown;
         Select select=new Select(ddm);
         select.selectByVisibleText("Hover Over Me First!");
         //Popup mesajini yazdirin

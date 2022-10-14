@@ -3,12 +3,13 @@ package tests.practise;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PractisePage;
+import pages.WebUniversityPages;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class WebdriverUniversityAllert {
 
-    PractisePage practise = new PractisePage();
+    WebUniversityPages webUniversityPages=new WebUniversityPages();
 
     @Test
     public void test() {
@@ -16,7 +17,7 @@ public class WebdriverUniversityAllert {
         // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
         Driver.getDriver().get(ConfigReader.getProperty("webDriverUniversityAllertsURL"));
         // 2. JavaScript alertin "CLICK ME!" seçeneğine tıklayın
-        practise.WYAclickButton1.click();
+        webUniversityPages.WYAclickButton1.click();
         // 3. Açılır metni alın
         String actualAlertText = Driver.getDriver().switchTo().alert().getText();
         // 4. Mesajın "I am an alert box!" olduğunu doğrulayın.
