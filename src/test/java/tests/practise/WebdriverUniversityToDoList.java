@@ -42,6 +42,16 @@ public class WebdriverUniversityToDoList {
         ) {
             each.click();
         }
+        //webUniversityPage.drawButtons.stream().forEach(t->t.click());
         //Tüm yapılacakların silindiğini doğrulayın.
+        //Assert.assertTrue(newtodos.size()!=0);
+        //Assert.assertFalse(webUniversityPage.deleteButtonWE.isDisplayed());
+        //NOT; driver bazen çok hızlı çalışabilir, böyle zamanlarda kodlarımızda aksaklık olabilir
+        //bu sebeple thread.sleep işimizi görecektir.
+
+
+
+
+
     }
 }
