@@ -1,4 +1,4 @@
-
+package tests.emoojis;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
